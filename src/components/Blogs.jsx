@@ -42,7 +42,7 @@ function Blogs({ blogs }) {
                     {blogs1.map((blog) => (
                         <Link key={blog.id} to={`/blog/${blog.id}`}>
                             <div className="overflow-hidden shadow-lg bg-white pt-3 rounded-3">
-                                <img className='rounded mx-auto' src={`http://localhost:1337${blog.attributes.img.data.attributes.url}`} alt={blog.title} />
+                                <img className='rounded mx-auto' src={blog.img} alt={blog.title} />
                                 <div className='p-8'>
                                     <h1 className='fw-bold'>{blog.title}</h1>
                                     <p className='text-muted'>{blog.desc}</p>
@@ -54,6 +54,6 @@ function Blogs({ blogs }) {
             </div>
         </div>
     );
-}
+}//`http://localhost:1337${blog.attributes.img.data.attributes.url}`
 
 export default Blogs;
