@@ -3,7 +3,10 @@ import Navbar from "../Navbar";
 import BlogContent from "../BlogContent";
 import Footer from "../Footer";
 
-function BlogContentPage() {
+function BlogContentPage({blogs}) {
+
+
+
   return (
     <div>
       <Navbar />

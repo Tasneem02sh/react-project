@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Blogs({ blogs }) {
-    console.log("BlogsPage");
-    console.log(blogs);
+function Blogs() {   
     
 
     const blogs1 = [
