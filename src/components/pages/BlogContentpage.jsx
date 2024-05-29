@@ -5,12 +5,10 @@ import Footer from "../Footer";
 
 function BlogContentPage({blogs}) {
 
-
-
   return (
     <div>
       <Navbar />
-      <BlogContent />
+      <BlogContent blogs={blogs}/>
       <Footer />
     </div>
   );

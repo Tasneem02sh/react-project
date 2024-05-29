@@ -4,12 +4,12 @@ import Blogs from "../Blogs"
 import Footer from "../Footer";
 
 
-function Homepage(blogs) {
+function Homepage({ blogs }) {
  
   return (
     <div>
     <Navbar/>
-    <Blogs blogs={blogs?blogs:""}/>
+    <Blogs blogs={blogs}/>
     <Footer/>
     </div>
   )
