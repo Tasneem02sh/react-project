@@ -58,16 +58,16 @@ function BlogContent({ blogs }) {
     <div className='container'>
       <div className='row justify-content-center py-5'>
         <div className='col-12 col-md-6 col-lg-4'>
-          <img className='img-fluid mb-3' src={blog.img} alt={blog.title} />
-          <h1 className='fw-bold'>{blog.title}</h1>
-          <p>{blog.desc}</p>
+          <img className='img-fluid mb-3' src={`http://localhost:1337${blog.attributes.blogImg.data.attributes.url}`} alt={blog.title} />
+          <h1 className='fw-bold'>{blog.attributes.title}</h1>
+          <p>{blog.attributes.description}</p>
         </div>
         <div className='col-12 col-md-6 col-lg-4'>
           <div className='card shadow-lg bg-white pt-3 rounded-3'>
-            <img className='rounded-circle img-thumbnail mx-auto d-block' src={`http://localhost:1337${blog.attributes.img.data.attributes.url}`} alt='' />
+            <img className='rounded-circle img-thumbnail mx-auto d-block' src={`http://localhost:1337${blog.attributes.authorImg.data.attributes.url}`} alt='' />
             <div className='text-center p-4'>
-              <h1 className='fw-bold'>{blog.attributes.blogTitle}</h1>
-              <p className='text-muted'>{blog.attributes.blogDesc}</p>
+              <h1 className='fw-bold'>{blog.attributes.authorName}</h1>
+              <p className='text-muted'>{blog.attributes.authorDesc}</p>
             </div>
           </div>
         </div>
